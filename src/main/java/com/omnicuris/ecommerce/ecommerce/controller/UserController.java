@@ -31,6 +31,11 @@ public class UserController {
         return userService.findUserById(id);
     }
 
+    @RequestMapping("{emailId}")
+    public User getUserByEmailId(@PathVariable(value = "emailId") String emailId) {
+        return userService.findUserByEmailId(emailId);
+    }
+
     @DeleteMapping("{id}")
     public ResponseEntity deleteUserById(@PathVariable(value = "id") Long id) {
         userService.deleteUserById(id);
