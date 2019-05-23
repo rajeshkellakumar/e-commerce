@@ -3,12 +3,14 @@ Sample e-commerce backend application(Java, Spring Boot, MYSQL)
 
 User APIs:
 1. Create User:
+    ```
     url: http://localhost:8080/users
     request: post
     body: {
           	"userName": "user_04",
           	"emailId": "user_04@email.com"
           }
+    ```
 2. Delete User by Id:
     url: http://localhost:8080/users/{id}
     request: delete
